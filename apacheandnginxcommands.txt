@@ -1,0 +1,29 @@
+    Apache httpd (or) nginx
+
+    1  cd ../.. (two steps Back)
+    2  pwd      (Present working directory)
+    3  rm -rf <directory name> (remove Directory Recursively)
+    4  ls -ltr 
+    5  cd /tmp/
+    6  ls -ltr
+    7  rm -f blu.pem (remove file)
+    8  ls -ltr
+   11  chmod 400 blu.pem (Changing the permissions to pem file)
+   12  cat blu.pem (To Display the file data)
+   13  exit
+   14  cd /tmp/
+   15  ls -ltr
+   16  chmod 400 blu.pem
+   17  ls -ltr
+   18  ssh -i blu.pem ec2-user@172.31.0.80
+   19  history
+   20  yum install httpd -y ( Install Apache)
+   21  systemctl start httpd (To start apache package)
+   22  systemctl stop httpd (To stop apache package)
+   23  systemctl restart httpd (To restart apache package)
+   24  ps - ef | grep httpd (To check the status of package)
+   25  netstat -tupln (to display the port is in listen or not)
+   26  scp -i <pem file> <source file> ec2-user@Public Ip:/<destination>(/tmp) (Copy from local to server)
+   27  /var/log/httpd/access.log (to check access log)
+   28  /var/log/httpd/error.log (to check error log)
+   29  httpd.conf (main configuration file in apache,can be overridden with the -f command line flag)
